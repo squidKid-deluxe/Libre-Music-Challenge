@@ -1,0 +1,614 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE CARLA-PROJECT>
+<CARLA-PROJECT VERSION='2.0'>
+ <EngineSettings>
+  <ForceStereo>false</ForceStereo>
+  <PreferPluginBridges>false</PreferPluginBridges>
+  <PreferUiBridges>true</PreferUiBridges>
+  <UIsAlwaysOnTop>false</UIsAlwaysOnTop>
+  <MaxParameters>200</MaxParameters>
+  <UIBridgesTimeout>4000</UIBridgesTimeout>
+ </EngineSettings>
+
+ <Transport>
+  <BeatsPerMinute>120</BeatsPerMinute>
+ </Transport>
+
+ <!-- MDA Piano -->
+ <Plugin>
+  <Info>
+   <Type>LV2</Type>
+   <Name>MDA Piano</Name>
+   <URI>http://drobilla.net/plugins/mda/Piano</URI>
+  </Info>
+
+  <Data>
+   <Active>Yes</Active>
+   <Volume>0.4017811</Volume>
+   <ControlChannel>1</ControlChannel>
+   <Options>0x3f0</Options>
+
+   <Parameter>
+    <Index>0</Index>
+    <Name>Envelope Decay</Name>
+    <Symbol>env_decay</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>1</Index>
+    <Name>Envelope Release</Name>
+    <Symbol>env_release</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>2</Index>
+    <Name>Hardness Offset</Name>
+    <Symbol>hardness_offset</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>3</Index>
+    <Name>Velocity to Hardness</Name>
+    <Symbol>vel_to_hardness</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>4</Index>
+    <Name>Muffling Filter</Name>
+    <Symbol>muffling_filter</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>5</Index>
+    <Name>Velocity to Muffling</Name>
+    <Symbol>vel_to_muffling</Symbol>
+    <Value>0.123999997973442</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>6</Index>
+    <Name>Velocity Sensitivity</Name>
+    <Symbol>vel_sensitivity</Symbol>
+    <Value>0.127000004053116</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>7</Index>
+    <Name>Stereo Width</Name>
+    <Symbol>stereo_width</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>8</Index>
+    <Name>Polyphony</Name>
+    <Symbol>polyphony</Symbol>
+    <Value>0.330000013113022</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>9</Index>
+    <Name>Fine Tuning</Name>
+    <Symbol>fine_tuning</Symbol>
+    <Value>0.5</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>10</Index>
+    <Name>Random Detuning</Name>
+    <Symbol>random_detuning</Symbol>
+    <Value>0.282999992370605</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>11</Index>
+    <Name>Stretch Tuning</Name>
+    <Symbol>stretch_tuning</Symbol>
+    <Value>0.666999995708466</Value>
+   </Parameter>
+  </Data>
+ </Plugin>
+
+ <!-- MDA ePiano -->
+ <Plugin>
+  <Info>
+   <Type>LV2</Type>
+   <Name>MDA ePiano</Name>
+   <URI>http://drobilla.net/plugins/mda/EPiano</URI>
+  </Info>
+
+  <Data>
+   <Active>Yes</Active>
+   <ControlChannel>1</ControlChannel>
+   <Options>0x3f0</Options>
+
+   <Parameter>
+    <Index>0</Index>
+    <Name>Envelope Decay</Name>
+    <Symbol>env_decay</Symbol>
+    <Value>0.5</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>1</Index>
+    <Name>Envelope Release</Name>
+    <Symbol>env_release</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>2</Index>
+    <Name>Hardness</Name>
+    <Symbol>hardness</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>3</Index>
+    <Name>Treble Boost</Name>
+    <Symbol>treble_boost</Symbol>
+    <Value>0.5</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>4</Index>
+    <Name>Modulation</Name>
+    <Symbol>modulation</Symbol>
+    <Value>0.5</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>5</Index>
+    <Name>LFO Rate</Name>
+    <Symbol>lfo_rate</Symbol>
+    <Value>0.854599416255951</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>6</Index>
+    <Name>Velocity Sense</Name>
+    <Symbol>vel_sense</Symbol>
+    <Value>0.261127591133118</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>7</Index>
+    <Name>Stereo Width</Name>
+    <Symbol>stereo_width</Symbol>
+    <Value>0.5</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>8</Index>
+    <Name>Polyphonic</Name>
+    <Symbol>polyphonic</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>9</Index>
+    <Name>Fine Tuning</Name>
+    <Symbol>fine_tuning</Symbol>
+    <Value>0.5</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>10</Index>
+    <Name>Random Tuning</Name>
+    <Symbol>random_tuning</Symbol>
+    <Value>0.145999997854233</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>11</Index>
+    <Name>Overdrive</Name>
+    <Symbol>overdrive</Symbol>
+    <Value>0</Value>
+   </Parameter>
+  </Data>
+ </Plugin>
+
+ <!-- Audio Gain (Stereo) -->
+ <Plugin>
+  <Info>
+   <Type>INTERNAL</Type>
+   <Name>Audio Gain (Stereo)</Name>
+   <Label>audiogain_s</Label>
+  </Info>
+
+  <Data>
+   <Active>Yes</Active>
+   <ControlChannel>1</ControlChannel>
+   <Options>0x0</Options>
+
+   <Parameter>
+    <Index>0</Index>
+    <Name>Gain</Name>
+    <Value>0.211884751915932</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>1</Index>
+    <Name>Apply Left</Name>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>2</Index>
+    <Name>Apply Right</Name>
+    <Value>1</Value>
+   </Parameter>
+  </Data>
+ </Plugin>
+
+ <!-- MDA ePiano -->
+ <Plugin>
+  <Info>
+   <Type>LV2</Type>
+   <Name>MDA ePiano (2)</Name>
+   <URI>http://drobilla.net/plugins/mda/EPiano</URI>
+  </Info>
+
+  <Data>
+   <Active>Yes</Active>
+   <Volume>0.8387725</Volume>
+   <ControlChannel>1</ControlChannel>
+   <Options>0x3f0</Options>
+
+   <Parameter>
+    <Index>0</Index>
+    <Name>Envelope Decay</Name>
+    <Symbol>env_decay</Symbol>
+    <Value>0.5</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>1</Index>
+    <Name>Envelope Release</Name>
+    <Symbol>env_release</Symbol>
+    <Value>0.5</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>2</Index>
+    <Name>Hardness</Name>
+    <Symbol>hardness</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>3</Index>
+    <Name>Treble Boost</Name>
+    <Symbol>treble_boost</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>4</Index>
+    <Name>Modulation</Name>
+    <Symbol>modulation</Symbol>
+    <Value>0.5</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>5</Index>
+    <Name>LFO Rate</Name>
+    <Symbol>lfo_rate</Symbol>
+    <Value>0.649999976158142</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>6</Index>
+    <Name>Velocity Sense</Name>
+    <Symbol>vel_sense</Symbol>
+    <Value>0.25</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>7</Index>
+    <Name>Stereo Width</Name>
+    <Symbol>stereo_width</Symbol>
+    <Value>0.5</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>8</Index>
+    <Name>Polyphonic</Name>
+    <Symbol>polyphonic</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>9</Index>
+    <Name>Fine Tuning</Name>
+    <Symbol>fine_tuning</Symbol>
+    <Value>0.5</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>10</Index>
+    <Name>Random Tuning</Name>
+    <Symbol>random_tuning</Symbol>
+    <Value>0.24600000679493</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>11</Index>
+    <Name>Overdrive</Name>
+    <Symbol>overdrive</Symbol>
+    <Value>0</Value>
+   </Parameter>
+  </Data>
+ </Plugin>
+
+ <!-- MIDI Note to CC -->
+ <Plugin>
+  <Info>
+   <Type>LV2</Type>
+   <Name>MIDI Note to CC</Name>
+   <URI>http://gareus.org/oss/lv2/midifilter#notetocc</URI>
+  </Info>
+
+  <Data>
+   <Active>Yes</Active>
+   <ControlChannel>1</ControlChannel>
+   <Options>0x3f1</Options>
+
+   <Parameter>
+    <Index>1</Index>
+    <Name>Filter Channel</Name>
+    <Symbol>channelf</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>2</Index>
+    <Name>Operation Mode</Name>
+    <Symbol>mode</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>3</Index>
+    <Name>CC Parameter</Name>
+    <Symbol>param</Symbol>
+    <Value>2</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>4</Index>
+    <Name>Active Key (midi-note)</Name>
+    <Symbol>key</Symbol>
+    <Value>60</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>5</Index>
+    <Name>Ignore Note Off</Name>
+    <Symbol>nooff</Symbol>
+    <Value>1</Value>
+   </Parameter>
+  </Data>
+ </Plugin>
+
+ <!-- Calf Reverb -->
+ <Plugin>
+  <Info>
+   <Type>LV2</Type>
+   <Name>Calf Reverb</Name>
+   <URI>http://calf.sourceforge.net/plugins/Reverb</URI>
+  </Info>
+
+  <Data>
+   <Active>Yes</Active>
+   <DryWet>0.01574803</DryWet>
+   <ControlChannel>1</ControlChannel>
+   <Options>0x3f1</Options>
+
+   <Parameter>
+    <Index>3</Index>
+    <Name>Decay time</Name>
+    <Symbol>decay_time</Symbol>
+    <MidiChannel>1</MidiChannel>
+    <MappedControlIndex>2</MappedControlIndex>
+    <MappedMinimum>2</MappedMinimum>
+    <MappedMaximum>5</MappedMaximum>
+    <MidiCC>2</MidiCC>
+    <Value>2.0290687084198</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>4</Index>
+    <Name>High Frq Damp</Name>
+    <Symbol>hf_damp</Symbol>
+    <Value>6334.27783203125</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>5</Index>
+    <Name>Room size</Name>
+    <Symbol>room_size</Symbol>
+    <Value>5</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>6</Index>
+    <Name>Diffusion</Name>
+    <Symbol>diffusion</Symbol>
+    <Value>0.852999985218048</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>7</Index>
+    <Name>Wet Amount</Name>
+    <Symbol>amount</Symbol>
+    <Value>0.0802397653460503</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>8</Index>
+    <Name>Dry Amount</Name>
+    <Symbol>dry</Symbol>
+    <Value>1.12038922309875</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>9</Index>
+    <Name>Pre Delay</Name>
+    <Symbol>predelay</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>10</Index>
+    <Name>Bass Cut</Name>
+    <Symbol>bass_cut</Symbol>
+    <Value>39.913631439209</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>11</Index>
+    <Name>Treble Cut</Name>
+    <Symbol>treble_cut</Symbol>
+    <Value>5453.654296875</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>12</Index>
+    <Name>Active</Name>
+    <Symbol>on</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>13</Index>
+    <Name>Input Gain</Name>
+    <Symbol>level_in</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>14</Index>
+    <Name>Output Gain</Name>
+    <Symbol>level_out</Symbol>
+    <Value>1</Value>
+   </Parameter>
+  </Data>
+ </Plugin>
+
+ <ExternalPatchbay>
+  <Connection>
+   <Source>system:capture_1</Source>
+   <Target>PulseAudio JACK Source:front-left</Target>
+  </Connection>
+  <Connection>
+   <Source>system:capture_2</Source>
+   <Target>PulseAudio JACK Source:front-right</Target>
+  </Connection>
+  <Connection>
+   <Source>PulseAudio JACK Sink:front-left</Source>
+   <Target>system:playback_1</Target>
+  </Connection>
+  <Connection>
+   <Source>PulseAudio JACK Sink:front-right</Source>
+   <Target>system:playback_2</Target>
+  </Connection>
+  <Connection>
+   <Source>a2j:Digital Piano [32] (capture): Digital Piano MIDI 1</Source>
+   <Target>MDA ePiano:events-in</Target>
+  </Connection>
+  <Connection>
+   <Source>a2j:Digital Piano [32] (capture): Digital Piano MIDI 1</Source>
+   <Target>a2j:seq192 [129] (playback): seq192 in</Target>
+  </Connection>
+  <Connection>
+   <Source>MDA Piano:Left Out</Source>
+   <Target>Audio Gain (Stereo):input_1</Target>
+  </Connection>
+  <Connection>
+   <Source>MDA Piano:Right Out</Source>
+   <Target>Audio Gain (Stereo):input_2</Target>
+  </Connection>
+  <Connection>
+   <Source>MDA ePiano:Left Out</Source>
+   <Target>Audio Gain (Stereo):input_1</Target>
+  </Connection>
+  <Connection>
+   <Source>MDA ePiano:Right Out</Source>
+   <Target>Audio Gain (Stereo):input_2</Target>
+  </Connection>
+  <Connection>
+   <Source>Audio Gain (Stereo):output_1</Source>
+   <Target>Calf Reverb:In L</Target>
+  </Connection>
+  <Connection>
+   <Source>Audio Gain (Stereo):output_2</Source>
+   <Target>Calf Reverb:In R</Target>
+  </Connection>
+  <Connection>
+   <Source>MDA ePiano (2):Left Out</Source>
+   <Target>Audio Gain (Stereo):input_1</Target>
+  </Connection>
+  <Connection>
+   <Source>MDA ePiano (2):Right Out</Source>
+   <Target>Audio Gain (Stereo):input_2</Target>
+  </Connection>
+  <Connection>
+   <Source>a2j:seq192 [129] (capture): seq192 1</Source>
+   <Target>a2j:TD-3-MO [36] (playback): TD-3-MO MIDI 1</Target>
+  </Connection>
+  <Connection>
+   <Source>a2j:seq192 [129] (capture): seq192 1</Source>
+   <Target>a2j:Seeeduino XIAO RP2040 [20] (playback): Seeeduino XIAO RP2040 MIDI 1</Target>
+  </Connection>
+  <Connection>
+   <Source>a2j:seq192 [129] (capture): seq192 2</Source>
+   <Target>a2j:RD-8 [24] (playback): RD-8 MIDI 1</Target>
+  </Connection>
+  <Connection>
+   <Source>a2j:seq192 [129] (capture): seq192 3</Source>
+   <Target>MDA ePiano (2):events-in</Target>
+  </Connection>
+  <Connection>
+   <Source>a2j:seq192 [129] (capture): seq192 3</Source>
+   <Target>a2j:Seeeduino XIAO RP2040 [20] (playback): Seeeduino XIAO RP2040 MIDI 1</Target>
+  </Connection>
+  <Connection>
+   <Source>a2j:seq192 [129] (capture): seq192 4</Source>
+   <Target>MDA Piano:events-in</Target>
+  </Connection>
+  <Connection>
+   <Source>a2j:seq192 [129] (capture): seq192 4</Source>
+   <Target>a2j:Seeeduino XIAO RP2040 [20] (playback): Seeeduino XIAO RP2040 MIDI 1</Target>
+  </Connection>
+  <Connection>
+   <Source>a2j:seq192 [129] (capture): seq192 5</Source>
+   <Target>MDA ePiano:events-in</Target>
+  </Connection>
+  <Connection>
+   <Source>a2j:seq192 [129] (capture): seq192 5</Source>
+   <Target>a2j:Seeeduino XIAO RP2040 [20] (playback): Seeeduino XIAO RP2040 MIDI 1</Target>
+  </Connection>
+  <Connection>
+   <Source>a2j:seq192 [129] (capture): seq192 6</Source>
+   <Target>MIDI Note to CC:events-in</Target>
+  </Connection>
+  <Connection>
+   <Source>MIDI Note to CC:events-out</Source>
+   <Target>Calf Reverb:events-in</Target>
+  </Connection>
+  <Connection>
+   <Source>Calf Reverb:Out L</Source>
+   <Target>system:playback_1</Target>
+  </Connection>
+  <Connection>
+   <Source>Calf Reverb:Out R</Source>
+   <Target>system:playback_2</Target>
+  </Connection>
+ </ExternalPatchbay>
+</CARLA-PROJECT>
